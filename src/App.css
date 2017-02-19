@@ -1,0 +1,1750 @@
+html, body {
+  overflow-x: hidden;
+/*  background-image: url(https://static.pexels.com/photos/24023/pexels-photo-24023.jpg);
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- HOME COMPONENT CSS --------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+.navbar {
+  width: auto;
+  height: auto;
+  background-color: #4E387E;
+  border-radius: 0px;
+  padding-bottom: 0px;
+  /*opacity: 0.9;*/
+  font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+  padding-bottom: 1px;
+  overflow: hidden;
+}
+
+.navbar:hover {
+  background-color: black;
+  transition: 0.5s;
+  color: white;
+}
+
+.navlist {
+  display: inline-block;
+  color: white;
+  justify-content: center;
+  list-style: none;
+  font-weight: bolder;
+  font-kerning: normal;
+  padding-top: 2px;
+  float: left;
+}
+
+#logo {
+  width: 175px;
+  height: 35px;
+  display: inline-block;
+  justify-content: left;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: -1px;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  transition: .5s;
+  font-weight: bold;
+}
+
+#logo:hover{
+  color: silver;
+}
+
+#redtext {
+  color: silver;
+  font-weight: bolder;
+}
+
+
+#title {
+  margin-top: 20px;
+}
+
+.homedivbanner {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+}
+
+#mainbanner {
+  margin-top: -220px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #2B3856;
+  display: inline-block;
+  justify-content: center;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 20px;
+  border-radius: 200px;
+  transition: 1s;
+}
+
+
+#earth {
+  background-image: url(http://4vector.com/i/free-vector-mars-clip-art_106276_Mars_clip_art_hight.png);
+  background-size: 100%;
+  background-position: center center;
+}
+
+
+#sun {
+  background-image: url(http://i771.photobucket.com/albums/xx357/jerry533482/sun.png);
+  background-size: 255%;
+  background-position: center center;
+  box-shadow: 0px 0px 30px 15px #DC381F;
+  transition: 0.4s;
+  -webkit-animation-name: rotate; 
+  -webkit-animation-duration: 150s; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  transition: 1s;
+}
+
+/* ----- ROTATAION ----- */
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    } to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* --- END ROTATAION --- */
+
+#sun:hover {
+  box-shadow: 0px 0px 35px 20px #DC381F; 
+  transition: 0.4s;
+}
+
+#galaxy {
+  background-image: url(https://images.unsplash.com/photo-1472712739516-7ad2b786e1f7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=8685cdff052172bc079d675bf7cc95d2);
+  background-size: 150%;
+  background-position: center center;
+  /*box-shadow: 0px 0px 30px 15px black;*/
+  transition: 1s;
+}
+
+.homediv {
+  width: auto;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.astBanner {
+  width: auto;
+  height: 700px;
+  background-color: black;
+  background-image: url(http://i.huffpost.com/gen/1626279/images/o-ASTEROID-EARTH-facebook.jpg);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 20%;
+  padding-bottom: 10%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.redbanner {
+  width: auto;
+  height: auto;
+  background-color: #af0a0a;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#asthr {
+  width: 38%;
+  border-width: 1px;
+  border-color: white;
+  float: left;
+}
+
+#neo {
+  font-size: 50px;
+}
+
+#spanarrow {
+  font-size: 50px;
+  margin-top: 18%;
+}
+
+.asterank {
+  width: 100%;
+  height: 700px;
+  border: 2px solid black;
+}
+
+#searchasthr {
+  width: 70%;
+  border-width: 2px;
+  border-color: red;
+
+}
+
+/*.neotag {
+  background-color: #1a1a1a;
+  opacity: 0.8;
+}*/
+
+@media screen and (max-width: 900px) {
+    
+    .box {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    #galaxy {
+      margin-top: 100px;
+    }
+    
+    #spacepx {
+      padding: 10px;
+    }
+
+    .box {
+      height: 250px;
+      width: 250px;
+    }
+
+    .homedivbanner {
+      width: auto;
+      height: 300px;
+      overflow: hidden;
+
+    }
+
+    .astBanner {
+      width: auto;
+      height: 700px;
+      background-color: black;
+      background-size: 100%;
+      padding-top: 40%;
+      padding-bottom: 10%;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      background-image: none;
+    }
+
+}
+
+
+.listitem {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+  width: 60px;
+}
+
+#spacespace {
+  margin-right: 10px;
+}
+
+
+.footer {
+  width: auto;
+  height: auto;
+  background-color: black;
+  margin-top: -10px;
+  padding-bottom: 30px;
+}
+
+.searchbar {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: white;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: black;
+  font-weight: bolder;
+}
+
+#searchlogo {
+  display: inline-block;
+  float: right;
+  justify-content: right;
+  margin: 5px;
+  color: white;
+}
+
+.closenav {
+  display: none;
+}
+
+.closenav:hover {
+  cursor: pointer;
+}
+
+#ham {
+  display: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .closenav {
+    display: initial;
+    float: right;
+    margin-right: 10%;
+    margin-top: -40px;
+  }
+
+  .listitem {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom-color: red;
+    transition: 0.4s;
+  }
+
+   .listitem:hover {
+    border-bottom-color: red;
+    transition: 0.4s;
+  }
+
+  #navnav {
+    height: auto;
+  }
+
+  #ham {
+    display: initial;
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+  }
+
+}
+
+/* ----------------------------------NAVBAR RESPONSIVENESS---------------------------------- */
+@media only screen and (max-width: 950px) {
+  
+ #navnav {
+    width: auto;
+    height: 65px;
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  #mainbanner {
+    margin-top: 65px;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  #searchlogo {
+    display: none;
+  }
+
+}
+/* --------------------------------END NAVBAR RESPONSIVENESS-------------------------------- */
+
+#footercenter {
+  margin-top: 80px;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.footercolumn {
+  color: white;
+  display: inline-block;
+}
+
+#quote {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#blockquote {
+  margin-top: 40px;
+  height: 120px;
+}
+
+.creditdiv {
+  width: auto;
+  height: auto;
+  background-color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+#parthj {
+  font-weight: bolder;
+}
+
+a {
+  color: white;
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+
+a:hover {
+  color: white;
+  transition: .5s;
+}
+
+a:visited {
+  color: white;
+}
+
+a:active {
+  color: red;
+}
+
+#neverbefore {
+  color: orange;
+}
+
+.apod {
+  width: auto;
+  height: auto;
+  background-color: #4E387E;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#dailypic {
+  width: 100%;
+  height: 500px;
+}
+
+#apodhr {
+  width: 600px;
+  border: 1px solid white;
+}
+
+#explan {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2em;
+  font-size: 18px;
+}
+
+#jplLogo {
+  width: 70%;
+  height: auto;
+  margin-bottom: 30%;
+  margin-top: 20%;
+  justify-content: center;
+}
+
+#nasaLogo {
+  width: 70%;
+  height: auto;
+  margin-top: 30%;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-bottom: 30%;
+  margin-top: 20%;
+}
+
+#nasa {
+  width: auto;
+  height: auto;
+  margin-top: 30%;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- PLANETS COMPONENT CSS ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+.planetsdiv {
+  width: auto;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.planetsearch {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #1a1a1a;
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+}
+
+#searchast {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: red;
+  margin-top: 20px;
+  border: 1px solid white;
+  transition: .5s;
+}
+
+#searchast:hover {
+  background-color: #C12869;
+  transition: .5s;
+  border: 1px solid #C12869;
+}
+
+.asteroidMenu {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.aslist {
+  background-color: white;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.asteroidInfo {
+  width: 700px;
+  height: 250px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: 0.4s;
+  color: white;
+  padding: 20px;
+}
+
+.asteroidInfo:hover {
+  transition: 0.4s;
+  font-weight: bolder;
+  border-radius: 0px;
+  border: 1px solid red;
+}
+
+#infoTable {
+  width: 600px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+input:focus {outline: none;}
+
+/* ----------------------------------NAVBAR RESPONSIVENESS---------------------------------- */
+@media only screen and (max-width: 720px) {
+
+  .asteroidInfo {
+    width: 95%;
+    height: auto;
+    overflow-x: scroll;
+    text-align: center;
+  }
+  
+  #infotable {
+    width: 100%;
+    height: auto;
+  }
+
+}
+/* --------------------------------END NAVBAR RESPONSIVENESS-------------------------------- */
+
+#heading {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid white;
+  padding: 5px;
+  background-color: #F62217;
+  text-align: center;
+}
+
+#data {
+  border: 1px solid white;
+  padding: 5px;  
+  transition: 0.3s;
+  height: auto;
+}
+
+#data:hover {
+  background-color: #FFDB58;
+  color: black;
+  transition: 0.3s;
+}
+
+.infoDiv {
+  width: auto;
+  height: auto;
+  background-color: #1a1a1a;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#datahr {
+  width: 400px;
+  background-color: red;
+  border-color: red;
+}
+
+#whatareast {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+  color: silver;
+}
+
+#leftboxdata {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  line-height: 5.5;
+  text-align: left;
+}
+
+#rightboxdata {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  line-height: 5.5;
+  text-align: left; 
+}
+
+#astdes {
+  line-height: 1.5;
+}
+
+#asteroidpicone {
+  padding-top: 20px;
+  width: 450px;
+  height: 450px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------- MARS COMPONENT CSS ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+.marsMainDiv {
+  width: auto;
+  height: auto;
+  padding-top: 75px;
+  background-color: white;
+  padding-bottom: 50px;
+/*  background-image: url(http://wallpapers-best.com/uploads/posts/2015-10/10_mars.jpg);
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
+}
+
+#rover {
+  width: 375px;
+  height: 275px;
+  margin-top: 20px;
+}
+
+#picsDiv {
+  border: 1px solid white;
+  width: 49%;
+  height: 300px;
+  overflow-x: hidden;
+  margin-top: 30px;
+  background-image: url(https://static.pexels.com/photos/23789/pexels-photo.jpg);
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+
+.picsul {
+  list-style: none;
+}
+
+.buffer {
+  width: auto;
+  height: 80px;
+  z-index: 1;
+  margin-top: -100px;
+/*  background-image: url(http://wallgallery.org/wp-content/uploads/2016/05/Mars-free-wallpapers.jpg);
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
+}
+
+.videoDiv {
+  width: auto;
+  height: 400px;
+  margin-bottom: -1px;
+}
+
+#gif {
+  width: 100%;
+  height: 400px;
+}
+
+#marshr {
+  width: 100%;
+  border: 1px solid black;
+  float: left;
+}
+
+.marspicdiv{
+  width: auto;
+  height: 300px;
+  background-image: url(https://static.pexels.com/photos/24023/pexels-photo-24023.jpg);
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: -1px;
+}
+
+.overlaydiv{
+  width: auto;
+  height: 605px;
+  background-color: black;
+  opacity: 0.9;
+  margin-bottom: 0px;
+  margin-top: -20px;
+  background-image: url(https://media.giphy.com/media/Y0hVDeS8y6nxS/giphy.gif);
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+
+#rowDiv {
+  padding-bottom: 40px;
+}
+
+#titlemars {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 150px;
+  font-weight: bolder;
+  font-size: 72px;
+  color: white;
+}
+
+#marstitle {
+  padding-top: 40px;
+}
+
+#rovers {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+
+#arrow {
+  color: red;
+  font-size: 72px;
+  margin-top: 50px;
+}
+
+.yellowhighlight {
+  background-color: #F88017;
+}
+
+.ajaxpics {
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin-bottom: -50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.picsbox {
+  width: auto;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  overflow-x: scroll;
+  border-right: 20px solid white;
+  /*border: 1px solid black;*/
+}
+
+.ajaxpictures {
+  /*border: 1px solid black;*/
+  padding-top: 50px;
+  width: auto;
+  height: auto;
+}
+
+.ajaxtr {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.ajaxtabledata {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+}
+
+#marspic {
+  width: 600px;
+  height: 450px;
+  margin: 10px;
+}
+
+.swiperight {
+  width: auto;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bolder;
+  background-color: red;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+#curi {
+  color: black;
+  padding-right: 100px;
+}
+
+.spiritopp {
+  width: auto;
+  height: auto;
+  background-color: #1a1a1a;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  padding-bottom: 30px;
+}
+
+#spirit {
+  width: 550px;
+  height: 600px;
+  overflow-y: scroll;
+  margin-left: 65px;
+}
+
+#opp {
+  width: 550px;
+  height: 600px;
+  overflow-y: scroll;
+  margin-left: 50px;
+}
+
+.spiritbox {
+  width: 50%;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #342D7E;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 50px;
+  color: white;
+}
+
+.oppbox {
+  width: 50%;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #EF9A4D;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 50px;
+  color: #1a1a1a;
+}
+
+.marsintrotext {
+  width: auto;
+  height: auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#roverheading { 
+  font-size: 18px;
+}
+
+.marstext {
+  font-size: 15px;
+  line-height: 2em;
+}
+
+#textdivone {
+  text-align: left;
+}
+
+#textdivtwo {
+  text-align: left;
+}
+
+#textdivthree {
+  text-align: left;
+}
+
+.marstextspan {
+  color: red;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.marsul {
+  list-style-type: none;
+}
+
+.blockhr {
+  width: 100%;
+  border: 1px solid #4E387E;
+  border-top-color: #1a1a1a;
+}
+
+.blockheadinghr {
+  width: 100%;
+  border: 1px solid white;
+  border-top-color: #1a1a1a;
+}
+
+.block {
+  color: #4E387E;
+  margin-top: -20px;
+}
+
+#roundrover {
+  width: 75%;
+  height: 75%;
+  margin-bottom: 40px;
+}
+
+
+/* --- MEDIA QUERY --- */
+@media screen and (max-width: 1120px) {
+
+  .overlaydiv{
+    background-image: none;
+  }
+
+  .marspicdiv{ 
+    display: none;
+  }
+
+  #picsDiv {
+    display: none;
+  }
+
+  .spiritbox {
+    width: 100%;
+  }
+
+  .oppbox {
+    width: 100%;
+  }
+
+  #spirit {
+    width: 80%;
+    border: 1px solid silver;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50%;
+  }
+
+  #opp {
+    width: 80%;
+    border: 1px solid silver;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 11%;
+  }
+} 
+
+/*-- ENDS MEDIA QUERY */
+
+.carbonRemovalDiv {
+  width: auto;
+  height: auto;
+  background-color: #4E387E;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.marsWeather {
+  width: auto;
+  height: 400px;
+  background-color: white;
+}
+
+#carbonleft {
+  text-align: left;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+#carbonright {
+  text-align: right;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+#moxie {
+  margin-top: 7%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------- LIVE COMPONENT CSS ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+.liveDiv {
+  width: auto;
+  height: 500px;
+  background-color: white;
+}
+
+.frame {
+  border: 1px solid black;
+}
+
+.videoDiv {
+  width: auto;
+  height: 500px;
+
+}
+
+#courtof {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.bufferTwo {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#nasalogo {
+  width: 200px;
+  height: 175px;
+  
+}
+
+#logoandcourtesy {
+  margin-top: 250px;
+}
+
+/* ------------------------------LOGO AND COURTESY RESPONSIVENESS---------------------------------- */
+@media only screen and (max-width: 840px) {
+
+  #logoandcourtesy {
+    width: auto;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+/* --------------------------------LOGO AND COURTESY RESPONSIVENESS-------------------------------- */
+
+#courtspan {
+  color: red;
+  padding-right: 10px;
+}
+
+.liveheader {
+  width: auto;
+  height: 700px;
+  background-color: white;
+  padding-top: 20%;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 55px;
+  background-image: url(https://static.pexels.com/photos/5439/earth-space.jpg);
+  background-size: 100%;
+  background-position: center center;
+}
+
+#headerwrap {
+  background-color: white;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  opacity: 0.9;
+}
+
+#liveheading {
+  padding-top: 50px;
+  color: black;
+  font-weight: bolder;
+}
+
+.info {
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+  height: auto;
+  background-color: #1a1a1a;
+  color: white;
+  margin-top: -2px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.latlongtable {
+  width: 80%;
+  height: 100px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tablebody {
+  color: white;
+  text-align: center;
+}
+
+.tablerows {
+  border: 1px solid red;
+}
+
+.tablehead {
+  border: 1px solid red;
+  text-align: center;
+  font-size: 22px;
+}
+
+.tabledata {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.sstext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 2em;
+  text-align: left;
+  margin-top: 50px;
+}
+
+/* ------ MEDIA QUERY FOR LIVE HEADER ------ */
+
+@media only screen and (max-width: 1200px) {
+
+  .liveheader {
+    background-image: none;
+  }
+
+  #headerwrap {
+    padding-left: 0px;
+    padding-right: 0px;
+    opacity: 1;
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  #liveheading {
+    padding-top: 50px;
+    color: red;
+    font-weight: bolder;
+  }
+}
+/* ------ END MEDIA QUERY FOR LIVE HEADER ------ */
+
+/* ---- MAP ----- */
+
+#mapid { 
+  margin-top: 50px;
+  width: 80%;
+  height: 400px; 
+}
+
+
+/*----- END MAP ---*/
+
+.whosupthere {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+}
+
+#currentlytext {
+  font-size: 30px;
+  margin-top: 10%;
+}
+
+#six {
+  color: red;
+}
+
+#currentlyleft{
+  padding: 40px;
+}
+
+#currentlyright{
+  padding: 40px;
+}
+
+.astlist {
+  list-style: none;
+  line-height: 2em;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.astname {
+  transition: 0.4s;
+  color: black;
+}
+
+.astname:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.whatisit {
+  width: auto;
+  height: auto;
+  background-color: #4E387E;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
+}
+
+
+/*#ssvector {*/
+  /*-webkit-transform: rotate(90deg); */
+/*  margin-top: 40%;
+  transition: 25s;
+  position :relative;
+  -webkit-animation: mymove 10s infinite; 
+  animation: mymove 10s infinite;
+}
+*/
+/* ----- ROTATAION ----- */
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 300px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}*/
+
+/* Standard syntax */
+/*@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 300px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}*/
+
+/*#ssvector:hover {
+  -webkit-transform: rotate(90deg); 
+  margin-top: 480%;
+  transition: 25s;
+}*/
+
+.whatispara {
+  line-height: 2em;
+  font-size: 16px;
+}
+
+#leftwhatis {
+  text-align: left;
+  padding-top: 40px;
+}
+
+#rightwhatis {
+  text-align: left;
+  padding-top: 40px;
+}
+
+#whatishr {
+  width: 100%;
+  border: 2px solid red;
+}
+
+#whyisimportant {
+  margin-top: 52px;
+}
+
+.framewrapper {
+  width: 85%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.trackframe {
+ position : relative;
+    top      : -400px;
+    left     : -500px;
+    width    : 1280px;
+    height   : 1200px;
+}
+
+.imagediv {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  
+  .imagediv {
+    display: none;
+  }
+
+} 
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------- SOUNDS COMPONENT CSS ------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#earthpic {
+  width: 100%;
+  height: 400px;
+}
+
+.soundsContent {
+  width: auto;
+  height: 550px;
+  background-color: black;
+  font-family: 'Bungee Hairline', cursive;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+#head {
+  font-size: 52px;
+  color: white;
+
+}
+
+.hoverdiv {
+  width: auto;
+  height: auto;
+  transition: 1.5s;
+  font-family: 'Bungee Hairline', cursive;
+  color: silver;
+}
+
+.hoverdiv:hover {
+  padding-right: 550px;
+  transition: 1.5s;
+  font-family: 'Bungee Hairline', cursive;
+  color: silver;
+}
+
+#craft {
+  display: inline-block;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+#funfact {
+  display: inline-block;
+  font-family: 'Bungee Hairline', cursive;
+  color: silver;
+  font-size: 18px;
+}
+
+.funfactdiv {
+  font-family: 'Bungee Hairline', cursive;
+  color: silver;
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+  margin-bottom: -10px;
+  margin-left: 1000px;
+  margin-right: -320px;
+  width: auto;
+  padding-right: 10px;
+}
+
+#fact {
+  display: inline-block;
+  font-size: 18px;
+}
+
+#galaxy {
+  margin-top: 0px;
+  opacity: 0.9;
+}
+
+.detaildiv {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #FBB917;
+    border-radius: 20px;
+    margin-top: -400px;
+    margin-left: 800px;
+    z-index: 10;
+    background-image: url(http://astronomyisawesome.com/wp-content/uploads/2015/11/10-cool-facts-about-the-voyager-1-space-probe-camera.jpg);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: left;
+    padding: 10px;
+}
+/*
+.detaildiv:hover {
+  margin-left: 1100px;
+}*/
+
+#ff {
+  color: red;
+  font-size: 30px;  
+  font-weight: bolder;
+}
+
+.detaillist {
+  list-style: none;
+  color: white;
+  font-family: 'Bungee Hairline', cursive;
+  margin-top: 200px;
+  margin-left: -30px;
+}
+
+#detdata {
+  font-family: 'Bungee Hairline', cursive;
+  color: #50EBEC;
+  padding-left: 10px;
+}
+
+.soundsdiv {
+  width: auto;
+  height: 400px;
+  background-color: #1a1a1a;
+}
+
+/* ------------------------------------------- DEFAULT CSS ------------------------------------------- */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* ------------- MEDIA QUERIES ------------------- */
+/*
+@media screen and (max-width: 767px)  {
+  .navbar {
+    height: 70px;    
+
+  }
+}
+*/
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------- SEARCHBOX COMPONENT CSS --------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.searchbox {
+  width: auto;
+  height: 0px;
+  background-color: black;
+  /*display: none;*/
+  transition: .4s;
+  font-family: 'Roboto', sans-serif;
+  color: silver;
+  /*padding: 40px;*/
+  justify-content: center;
+}
+
+#searchheading {
+  margin-top: 100px;
+}
+
+.closeArrow {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  margin-top: 40px;
+}
+
+.searchtext {
+  display: none;
+}
+
+.searchboxsearch {
+  width: 250px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- DISCUSS COMPONENT CSS ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.discussdiv {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+}
+
+#discussLeft {
+   padding-top: 40px;
+   padding-bottom: 40px; 
+}
+
+#discussRight {
+   padding-top: 40px;
+   padding-bottom: 40px; 
+}
+
+.nameinput {
+  width: 85%;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+}
+
+.emailinput{
+  width: 85%;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+}
+
+#entercomment{
+  width: 85%;
+  height: 100px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+}
+
+textarea:focus {outline: none;}
+
+.submitbutton {
+  width: 100px;
+  height: 35px;
+  border: 1px solid #4E387E;
+  font-weight: bolder;
+  background-color: #4E387E;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+
+.submitbutton:hover {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  transition: 0.4s;
+  border: 1px solid red;
+}
+
+.submitbutton:focus {outline: none;}
+
+.rocket {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#join {
+  font-size: 50px;
+}
+
+#downarrow {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+#discussRightbox {
+  border: 2px solid black;
+  margin-top: 20px;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: scroll;
+  border-radius: 5px;
+  height: 500px;
+}
+
+#namehr {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.postdiv {
+  padding: 10px;
+  border: 1px solid silver;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9ed;
+}
+
+
+
+/* ------------------- DISCUSS DIV MEDIA QUERY ------------------------ */
+
+@media only screen and (max-width: 800px) {
+
+  .discussdiv {
+      padding-bottom: 100px;
+  }
+
+  #join {
+    margin-top: -100px;
+  }
+
+  .rocket {
+    margin-top: 50px;
+  }
+
+  .html, body {
+    background-image: none;
+  }
+
+  .nameinput {
+    width: 100%;
+  }
+
+  .emailinput {
+    width: 100%;
+  }
+
+  #entercomment {
+    width: 100%;
+  }
+
+  .submitbutton {
+    justify-content: center;
+  }
+
+  #discussRightbox {
+    border: 2px solid black;
+    margin-top: -40px;
+    padding: 20px;
+  }
+
+}
+
+/* ---------------- END DISCUSS DIV MEDIA QUERY ------------------------ */
+
+.formform {
+  padding: 20px;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+
+.formform:hover {
+  border: 2px solid red;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+#whatisitone {
+  line-height: 2em;
+  font-size: 18px;
+  margin-top: 40px; 
+}
